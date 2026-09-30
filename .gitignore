@@ -1,6 +1,4 @@
 .DS_Store
-.env
-.env.*
 !.env.example
 !.env.local.example
 !.env.android.local.example
@@ -56,3 +54,4 @@ apps/mobile/ios/
 /assets/brand/edgeever-concept-13.png
 /docs/notion-ai-feature-landscape.en-US.md
 /docs/notion-ai-feature-landscape.zh-CN.md
+config.bat

@@ -5,7 +5,7 @@
   "type": "module",
   "main": "expo-router/entry",
   "scripts": {
-    "dev": "bun ../../scripts/mobile-dev.mjs",
+    "dev": "node init && bun ../../scripts/mobile-dev.mjs",
     "android": "bun ../../scripts/mobile-dev.mjs run:android",
     "web": "expo start --web",
     "typecheck": "tsc -p tsconfig.json --noEmit"

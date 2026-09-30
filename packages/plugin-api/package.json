@@ -10,13 +10,16 @@
     }
   },
   "types": "./dist/index.d.ts",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "bun build ./src/index.ts --outdir ./dist --target browser --format esm && tsc -p tsconfig.build.json",
+    "build": "node init && bun build ./src/index.ts --outdir ./dist --target browser --format esm && tsc -p tsconfig.build.json",
     "prepack": "bun run build"
   },
   "license": "AGPL-3.0-or-later"
